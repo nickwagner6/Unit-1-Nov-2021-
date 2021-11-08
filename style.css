@@ -1,0 +1,13 @@
+.temp-form {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.convert-button {
+  margin-top: 10px;
+}
+
+.form-section {
+  width: 21%;
+}
