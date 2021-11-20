@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Temperature Converter</title>
-    <body>
-  </head>
-  <h1>Temperature Converter</h1>
-  <section class="form-section">
-    <label for="celsius">Celsius:</label>
-    <input type="number" id="celsius" placeholder="" />
-    <label for="fahrenheit">Fahrenheit:</label>
-    <input type="number" id="fahrenheit" placeholder="" />
-    <button id="convertButton">Convert</button>
-    <img/>
-  </section>
-    <script src="script.js"></script>
+  <title>Temperature Converter</title>
+  <script src="convert.js"></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    label {
+      display: block;
+    }
+
+    #errorMessage {
+      color: red;
+    }
+  </style>
+
+  <body>
+    <h1>Temperature Converter</h1>
+    <p>
+      <label for="cInput">Celsius:</label>
+      <input id="cInput" type="text" />
+    </p>
+    <p>
+      <label for="fInput">Fahrenheit:</label>
+      <input id="fInput" type="text" />
+    </p>
+    <input id="convertButton" type="button" value="Convert" />
+    <div id="errorMessage"></div>
+    <p>
+      <img id="weatherImage" src="assets/warm.png" alt="Warm" />
+    </p>
   </body>
 </html>
